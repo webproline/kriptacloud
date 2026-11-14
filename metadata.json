@@ -1,0 +1,6 @@
+{
+  "name": "Kripta Cloud",
+  "description": "Landing page oficial da Kripta Cloud (kriptacloud.com) — armazenamento na nuvem com encriptação ponta-a-ponta, sincronização multi-dispositivo e planos flexíveis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
