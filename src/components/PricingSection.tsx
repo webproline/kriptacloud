@@ -29,12 +29,12 @@ export function PricingSection({ billing, onBillingChange }: PricingSectionProps
           <div
             role="group"
             aria-label="Periodicidade de faturação"
-            className="inline-flex self-start rounded-lg border border-slate-800 bg-[#0A101F] p-1 md:self-auto shrink-0"
+            className="inline-flex max-w-full self-start rounded-lg border border-slate-800 bg-[#0A101F] p-1 md:self-auto shrink-0"
           >
             <button
               type="button"
               onClick={() => onBillingChange('monthly')}
-              className={`min-h-[40px] rounded-md px-4 py-2 text-xs font-medium transition-colors whitespace-nowrap cursor-pointer ${
+              className={`min-h-[40px] rounded-md px-3 py-2 text-xs font-medium transition-colors whitespace-nowrap cursor-pointer sm:px-4 ${
                 billing === 'monthly'
                   ? 'bg-slate-800 text-white'
                   : 'text-slate-400 hover:text-slate-200'
@@ -45,7 +45,7 @@ export function PricingSection({ billing, onBillingChange }: PricingSectionProps
             <button
               type="button"
               onClick={() => onBillingChange('annual')}
-              className={`min-h-[40px] rounded-md px-4 py-2 text-xs font-medium transition-colors whitespace-nowrap cursor-pointer ${
+              className={`min-h-[40px] rounded-md px-3 py-2 text-xs font-medium transition-colors whitespace-nowrap cursor-pointer sm:px-4 ${
                 billing === 'annual'
                   ? 'bg-sky-500 text-slate-950 font-semibold'
                   : 'text-slate-400 hover:text-slate-200'
@@ -57,7 +57,7 @@ export function PricingSection({ billing, onBillingChange }: PricingSectionProps
         </div>
 
         {/* 5-plan informative grid */}
-        <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {PRICING_TIERS.map((tier) => {
             const activePrice =
               billing === 'monthly' ? tier.monthlyPrice : tier.annualMonthlyPrice;

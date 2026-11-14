@@ -20,14 +20,14 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#050811] text-slate-100">
+    <div className="min-h-screen overflow-x-clip bg-[#050811] text-slate-100">
       <Navbar onExplorePlans={() => scrollToSection('planos')} />
 
       <main>
         {/* Hero Section */}
         <section
           id="inicio"
-          className="relative overflow-hidden bg-[radial-gradient(ellipse_at_top_right,rgba(14,165,233,0.14),transparent_55%)] pt-14 pb-16 sm:pt-20 sm:pb-20"
+          className="relative overflow-hidden bg-[radial-gradient(ellipse_at_top_right,rgba(14,165,233,0.14),transparent_55%)] pt-10 pb-14 sm:pt-20 sm:pb-20"
         >
           <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-stretch">
@@ -37,7 +37,7 @@ export default function App() {
                   Armazenamento Encriptado · kriptacloud.com
                 </p>
 
-                <h1 className="mt-3 text-[clamp(2.25rem,4vw,3.75rem)] font-bold leading-[1.08] tracking-tight text-white">
+                <h1 className="mt-3 text-[clamp(2.125rem,4vw,3.75rem)] font-bold leading-[1.08] tracking-tight text-white">
                   A tua Cloud privada. Em qualquer lugar.
                 </h1>
 
@@ -83,7 +83,7 @@ export default function App() {
 
               {/* Right Column: Clean Kripta Cloud Brand & Architectural Focal Panel */}
               <div className="lg:col-span-5">
-                <div className="relative flex h-full min-h-[280px] flex-col items-center justify-center overflow-hidden rounded-2xl border border-slate-800/90 bg-[#070B16] p-8">
+                <div className="relative flex h-full min-h-[240px] sm:min-h-[280px] flex-col items-center justify-center overflow-hidden rounded-2xl border border-slate-800/90 bg-[#070B16] p-6 sm:p-8">
                   <div
                     aria-hidden="true"
                     className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(14,165,233,0.16),transparent_68%)]"
@@ -101,7 +101,7 @@ export default function App() {
                     src="/assets/aistudio/IMG_4944_c6afa697.jpg"
                     alt="KriptaCloud — Identidade oficial"
                     referrerPolicy="no-referrer"
-                    className="relative z-10 w-full max-w-[340px] object-contain mix-blend-screen select-none"
+                    className="relative z-10 w-full max-w-[260px] sm:max-w-[340px] object-contain mix-blend-screen select-none"
                   />
 
                   <p className="relative z-10 mt-6 text-center text-xs font-medium text-slate-400">

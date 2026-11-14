@@ -64,7 +64,7 @@ export function CapabilitiesBento() {
         {/* Asymmetric Bento Grid: col-span-2 + col-span-1 */}
         <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-3">
           {/* 01. Marquee capability (col-span-2) */}
-          <div className="flex flex-col justify-between rounded-2xl border border-slate-800/90 bg-[#0A101F] p-6 sm:p-8 lg:col-span-2">
+          <div className="min-w-0 flex flex-col justify-between rounded-2xl border border-slate-800/90 bg-[#0A101F] p-6 sm:p-8 lg:col-span-2">
             <div>
               <div className="flex items-center gap-3 text-slate-400">
                 <KeyRound className="h-5 w-5 text-sky-400" aria-hidden="true" />
@@ -101,7 +101,7 @@ export function CapabilitiesBento() {
           </div>
 
           {/* 02. Multi-device Sync (col-span-1) */}
-          <div className="flex flex-col justify-between rounded-2xl border border-slate-800/90 bg-[#0A101F] p-6 sm:p-8">
+          <div className="min-w-0 flex flex-col justify-between rounded-2xl border border-slate-800/90 bg-[#0A101F] p-6 sm:p-8">
             <div>
               <div className="flex items-center gap-3 text-slate-400">
                 <FolderSync className="h-5 w-5 text-sky-400" aria-hidden="true" />
@@ -116,11 +116,11 @@ export function CapabilitiesBento() {
             </div>
 
             <div className="mt-6 border-t border-slate-800/80 pt-4 text-xs text-slate-400">
-              <div className="flex items-center justify-between py-1">
+              <div className="flex flex-wrap items-center justify-between gap-2 py-1">
                 <span>Computadores</span>
                 <span className="font-medium text-slate-200">Windows · macOS · Linux</span>
               </div>
-              <div className="flex items-center justify-between py-1">
+              <div className="flex flex-wrap items-center justify-between gap-2 py-1">
                 <span>Telemóveis e Tablets</span>
                 <span className="font-medium text-slate-200">iOS · Android</span>
               </div>
@@ -128,7 +128,7 @@ export function CapabilitiesBento() {
           </div>
 
           {/* 03. Controlled Sharing (col-span-1) */}
-          <div className="flex flex-col justify-between rounded-2xl border border-slate-800/90 bg-[#0A101F] p-6 sm:p-8">
+          <div className="min-w-0 flex flex-col justify-between rounded-2xl border border-slate-800/90 bg-[#0A101F] p-6 sm:p-8">
             <div>
               <div className="flex items-center gap-3 text-slate-400">
                 <Share2 className="h-5 w-5 text-sky-400" aria-hidden="true" />
@@ -153,7 +153,7 @@ export function CapabilitiesBento() {
                     key={opt.id}
                     type="button"
                     onClick={() => setExpiry(opt.id as '24h' | '7d' | 'once')}
-                    className={`min-h-[36px] rounded-md px-2 py-1 text-xs font-medium transition-colors whitespace-nowrap cursor-pointer ${
+                    className={`min-h-[36px] rounded-md px-1.5 py-1 text-[11px] font-medium transition-colors whitespace-nowrap cursor-pointer sm:px-2 sm:text-xs ${
                       expiry === opt.id
                         ? 'bg-slate-800 text-white'
                         : 'text-slate-400 hover:text-slate-200'
@@ -174,8 +174,8 @@ export function CapabilitiesBento() {
                 />
               </label>
 
-              <div className="mt-3 flex items-center justify-between gap-2 rounded-lg bg-[#050811] px-3 py-2">
-                <span className="truncate font-[var(--font-mono)] text-xs text-slate-300">
+              <div className="mt-3 flex min-w-0 items-center justify-between gap-2 rounded-lg bg-[#050811] px-3 py-2">
+                <span className="min-w-0 flex-1 truncate font-[var(--font-mono)] text-xs text-slate-300">
                   {shareUrl}
                 </span>
                 <button
@@ -195,7 +195,7 @@ export function CapabilitiesBento() {
           </div>
 
           {/* 04. Backups & Versioning (col-span-2) */}
-          <div className="flex flex-col justify-between rounded-2xl border border-slate-800/90 bg-[#0A101F] p-6 sm:p-8 lg:col-span-2">
+          <div className="min-w-0 flex flex-col justify-between rounded-2xl border border-slate-800/90 bg-[#0A101F] p-6 sm:p-8 lg:col-span-2">
             <div>
               <div className="flex items-center gap-3 text-slate-400">
                 <History className="h-5 w-5 text-sky-400" aria-hidden="true" />

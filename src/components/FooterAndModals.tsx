@@ -113,7 +113,7 @@ export function FooterAndModals({
           onClick={onCloseDemo}
         >
           <div
-            className="w-full max-w-2xl rounded-2xl border border-slate-800 bg-[#0A101F] p-6 sm:p-8"
+            className="max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-2xl border border-slate-800 bg-[#0A101F] p-6 sm:p-8"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-start justify-between gap-4 border-b border-slate-800 pb-4">
@@ -190,7 +190,7 @@ export function FooterAndModals({
           onClick={() => setLegalDoc(null)}
         >
           <div
-            className="w-full max-w-lg rounded-2xl border border-slate-800 bg-[#0A101F] p-6 sm:p-7"
+            className="max-h-[90vh] w-full max-w-lg overflow-y-auto rounded-2xl border border-slate-800 bg-[#0A101F] p-6 sm:p-7"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between gap-4 border-b border-slate-800 pb-4">
